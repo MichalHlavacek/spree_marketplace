@@ -31,7 +31,7 @@ Installation
 Add spree_marketplace to your Gemfile:
 
 ```ruby
-gem 'spree_marketplace', github: 'jdutil/spree_marketplace'
+gem 'spree_marketplace', github: 'OmSolution/spree_marketplace'
 ```
 
 Bundle your dependencies and run the installation generator:
