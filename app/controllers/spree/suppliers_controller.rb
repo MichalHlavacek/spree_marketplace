@@ -10,6 +10,7 @@ class Spree::SuppliersController < Spree::StoreController
         .joins("INNER JOIN spree_users ON spree_users.supplier_id=spree_suppliers.id")
         .where(:spree_users => {campus: params[:campus]})
     end
+    @suppliers = @suppliers.page(params[:page]).per(Spree::Config.favorites_per_page)
 	end
 
 	def show

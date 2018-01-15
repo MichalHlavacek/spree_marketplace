@@ -1,9 +1,14 @@
-<div data-hook="supplier-index">
+<br><br>
+<div data-hook="supplier-index" class="row">
 	<% if @suppliers.any? %>
-		<div class="col-md-9 col-sm-8 pull-right">  
-			<ul id="suppliers" class="inline product-listing" data-hook>
+		<div class="col-md-3 col-sm-4">
+			<h3>Nu Lenders:</h3>
+		</div>  
+		<div class="col-md-9 col-sm-8">  
+			<ul id="suppliers" class="product-listing" style="padding:0px;" data-hook>
 				<%= render :partial => 'spree/suppliers/supplier', collection: @suppliers.reject{|s| s.profile_picture.blank? } %>
 			</ul>
 		</div>
+		<%= paginate @suppliers
 	<% end %>
 </div>
