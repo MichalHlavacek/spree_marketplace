@@ -1,7 +1,9 @@
 <div data-hook="supplier-index">
 	<% if @suppliers.any? %>
-		<ul id="suppliers" class="inline product-listing" data-hook>
-			<%= render :partial => 'spree/suppliers/supplier', collection: @suppliers.reject{|s| s.profile_picture.blank? } %>
-		</ul>
+		<div class="col-md-9 col-sm-8 pull-right">  
+			<ul id="suppliers" class="inline product-listing" data-hook>
+				<%= render :partial => 'spree/suppliers/supplier', collection: @suppliers.reject{|s| s.profile_picture.blank? } %>
+			</ul>
+		</div>
 	<% end %>
 </div>
