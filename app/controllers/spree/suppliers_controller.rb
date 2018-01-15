@@ -8,6 +8,7 @@ class Spree::SuppliersController < Spree::StoreController
     unless (params[:campus]) @suppliers = @suppliers
       .joins("INNER JOIN spree_users ON spree_users.supplier_id=spree_suppliers.id")
       .where(:spree_users => {campus: params[:campus]})
+    end
 	end
 
 	def show
