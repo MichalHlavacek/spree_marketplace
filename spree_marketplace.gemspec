@@ -48,7 +48,7 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<stripe>, [">= 0"])
       s.add_runtime_dependency(%q<spree_core>, [">= 2.4.3.beta"])
-      s.add_runtime_dependency(%q<spree_drop_ship>, ["3.0.1.beta"])
+      s.add_runtime_dependency(%q<spree_drop_ship>, ["3.0.1"])
       s.add_development_dependency(%q<capybara>, ["~> 2.2"])
       s.add_development_dependency(%q<coffee-rails>, [">= 0"])
       s.add_development_dependency(%q<coveralls>, [">= 0"])
@@ -70,7 +70,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<stripe>, [">= 0"])
       s.add_dependency(%q<spree_core>, [">= 2.4.3.beta"])
-      s.add_dependency(%q<spree_drop_ship>, ["3.0.1.beta"])
+      s.add_dependency(%q<spree_drop_ship>, ["3.0.1"])
       s.add_dependency(%q<capybara>, ["~> 2.2"])
       s.add_dependency(%q<coffee-rails>, [">= 0"])
       s.add_dependency(%q<coveralls>, [">= 0"])
@@ -93,7 +93,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<stripe>, [">= 0"])
     s.add_dependency(%q<spree_core>, [">= 2.4.3.beta"])
-    s.add_dependency(%q<spree_drop_ship>, ["3.0.1.beta"])
+    s.add_dependency(%q<spree_drop_ship>, ["3.0.1"])
     s.add_dependency(%q<capybara>, ["~> 2.2"])
     s.add_dependency(%q<coffee-rails>, [">= 0"])
     s.add_dependency(%q<coveralls>, [">= 0"])
