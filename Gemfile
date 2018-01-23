@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 group :development, :test do
-  gem 'spree', '~> 3.2.1'
-  gem 'spree_auth_devise', '~> 3.2'
+  gem 'spree', '3.4.4'
+  gem 'spree_auth_devise', '3.3.1'
   gem 'spree_drop_ship',        github: 'JCengineer/spree_drop_ship'
   gem 'spree_digital',          github: 'halo/spree_digital'
   gem 'spree_editor',           github: 'spree/spree_editor'
